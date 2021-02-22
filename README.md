@@ -4,6 +4,7 @@ This repository contains an example how to use methods in an open62541 OPC UA Se
 
 # Content
 - myServer.c: A simple OPC UA Server offering two void/void Methods and one method with two input and one output parameters
+- myClient.c: A simple OPC UA Client, connecting to the server and calling the three methods
 - Makefile: to build the examples
 
 # Dependencies

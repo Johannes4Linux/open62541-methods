@@ -62,6 +62,7 @@ turn_led_on(UA_Server *server,
                          const UA_NodeId *objectId, void *objectContext,
                          size_t inputSize, const UA_Variant *input,
                          size_t outputSize, UA_Variant *output) {
+	led_2 = true;
 #ifdef gpio
 	digitalWrite(25, HIGH);
 #else
@@ -80,6 +81,7 @@ turn_led_off(UA_Server *server,
                          const UA_NodeId *objectId, void *objectContext,
                          size_t inputSize, const UA_Variant *input,
                          size_t outputSize, UA_Variant *output) {
+	led_2 = false;
 #ifdef gpio
 	digitalWrite(25, LOW);
 #else
